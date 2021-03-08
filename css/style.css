@@ -1,0 +1,194 @@
+/* Подготовка */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root {
+   --first-text-color: #32afb2;
+   --second-text-color: #555e70;
+   --first-text-family: 'Roboto';
+}
+
+/* Подготовка закончена */
+
+/* Блок фото/имя */
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: grey;
+   font-family: var(--first-text-family);
+   font-size: 10px;
+}
+
+.background {
+   width: 800px;
+   background-color: #fff;
+   padding: 50px;
+}
+
+.footer,
+.expirience-contacts,
+.interests-education,
+.knowledges-skills {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-column-gap: 5%;
+}
+
+.footer__photo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5%;
+   border-bottom: 2px solid var(--second-text-color);
+}
+
+.footer__name {
+   display: flex;
+   flex-direction: column;
+   padding: 8% 0 5% 0;
+   border-bottom: 2px solid var(--second-text-color);
+}
+
+.footer__photo-img {
+   border-radius: 50%;
+}
+
+.footer__name-title {
+   font-size: 17px;
+}
+
+.footer__name-subtitle {
+   font-size: 17px;
+   color: var(--first-text-color);
+}
+
+.footer__name-desc {
+   color: var(--second-text-color);
+   padding-top: 5%;
+}
+
+/* Блок фото/имя закончен */
+
+/* Блок контакты/опыт работы */
+
+.expirience-contacts {
+   padding-top: 4%;
+}
+
+.expirience,
+.contacts {
+   border-bottom: 2px solid var(--second-text-color);
+   padding-bottom: 7%;
+}
+
+.contacts__title,
+.expirience__title {
+   font-size: 17px;
+}
+
+.contacts__items {
+   list-style-type: none;
+   padding-top: 3%;
+}
+
+.contacts__item,
+.expirience__item {
+   padding-top: 3%;
+}
+
+.contacts__item-subtitle,
+.expirience__item-subtitle {
+   color: var(--first-text-color);
+}
+
+.expirience__items {
+   list-style-type: none;
+}
+
+.expirience__item-list {
+   list-style-type: '-';
+   padding-top: 2%;
+}
+
+/* Блок контакты/опыт работы закончен*/
+
+/* Блок контакты/опыт работы */
+.interests-education {
+   padding-top: 4%;
+}
+
+.education,
+.interests {
+   border-bottom: 2px solid var(--second-text-color);
+   padding-bottom: 7%;
+}
+
+.interests__title,
+.education__title {
+   font-size: 17px;
+}
+
+.interests__items {
+   list-style-type: none;
+   padding-top: 3%;
+}
+
+.interests__item {
+   padding-top: 3%;
+}
+
+.interests__item-subtitle {
+   color: var(--first-text-color);
+}
+
+.interests__item-links {
+   text-decoration: none;
+}
+
+.education__desc {
+   padding-top: 3%;
+}
+
+.education__desc-subtitle {
+   color: var(--first-text-color);
+}
+
+/* Блок контакты/опыт работы закончен*/
+
+/* Блок знания/умения */
+
+.knowledges-skills {
+   padding-top: 4%;
+}
+
+.knowledges,
+.skills {
+   border-bottom: 2px solid var(--second-text-color);
+   padding-bottom: 7%;
+}
+
+.knowledges__title,
+.skills__title {
+   font-size: 17px;
+}
+
+.knowledges__items {
+   list-style-type: '-';
+   padding-top: 3%;
+   color: var(--first-text-color);
+   font-weight: 600;
+}
+
+.knowledges__item,
+.skills__item {
+   padding-top: 3%;
+}
+
+.skills__items {
+   list-style-type: '-';
+   font-weight: 600;
+}
