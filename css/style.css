@@ -81,6 +81,8 @@ body {
 
 .expirience,
 .contacts {
+   display: flex;
+   flex-direction: column;
    border-bottom: 2px solid var(--second-text-color);
    padding-bottom: 7%;
 }
@@ -123,6 +125,8 @@ body {
 
 .education,
 .interests {
+   display: flex;
+   flex-direction: column;
    border-bottom: 2px solid var(--second-text-color);
    padding-bottom: 7%;
 }
@@ -167,6 +171,8 @@ body {
 
 .knowledges,
 .skills {
+   display: flex;
+   flex-direction: column;
    border-bottom: 2px solid var(--second-text-color);
    padding-bottom: 7%;
 }
